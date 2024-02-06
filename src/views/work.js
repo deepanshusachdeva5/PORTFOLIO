@@ -25,7 +25,7 @@ const Work =(props)=>{
           <div className="home-links-container">
             <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
             <span className="home-link1 Navbar-Link">Experience</span>
-            <span className="home-link2 Navbar-Link">Portofolio</span>
+            <span className="home-link2 Navbar-Link">Publications</span>
             <span className="Navbar-Link">Contact</span>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">

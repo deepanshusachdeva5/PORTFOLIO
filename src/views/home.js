@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useNavigate } from 'react-router-dom'
 
+
 import './home.css'
 import './work.css'
 
@@ -20,6 +21,10 @@ const Home = (props) => {
       navigate('/work');
   }
 
+  const handleOnMyPublications = () =>{
+
+      navigate('/publications')
+  }
   // const handleClickResume = () =>{
 
   //   navigate('https://drive.google.com/drive/u/0/folders/1kqJRuVpwT3-_bZCX3WglumLIJXxdbdQz')
@@ -37,7 +42,7 @@ const Home = (props) => {
           <div className="home-links-container">
             <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
             <span className="home-link1 Navbar-Link">Experience</span>
-            <span className="home-link2 Navbar-Link">Publications</span>
+            <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Publications</span></button>
             <span className="Navbar-Link">Contact</span>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
@@ -55,9 +60,9 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-links-container1">
-              <span className="home-link4 Navbar-Link">About</span>
+              <span className="home-link4 Navbar-Link">My Work</span>
               <span className="home-link5 Navbar-Link">Experience</span>
-              <span className="home-link6 Navbar-Link">Portofolio</span>
+              <span className="home-link6 Navbar-Link">Publications</span>
               <span className="Navbar-Link">Contact</span>
             </div>
           </div>

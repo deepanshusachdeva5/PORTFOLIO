@@ -6,6 +6,7 @@ import {
   Routes,
 } from 'react-router-dom'
 
+import Publications from './views/publications'
 import './style.css'
 import Home from './views/home'
 import NotFound from './views/not-found'
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route element={<Home></Home>} exact path="/" />
         <Route element={<Work></Work>}  path="/work" />
+        <Route element={<Publications></Publications>}  path="/publications" />
         <Route element={<NotFound></NotFound>} path="**" />
       </Routes>
     </Router>
