@@ -16,15 +16,18 @@ const Home = (props) => {
             navigate('/')
 
     }
+
+  const handleOnMyPublications = () =>{
+
+
+      navigate('/publications')
+  }
   const handleOnMyWork = () =>{
 
       navigate('/work');
   }
 
-  const handleOnMyPublications = () =>{
 
-      navigate('/publications')
-  }
   // const handleClickResume = () =>{
 
   //   navigate('https://drive.google.com/drive/u/0/folders/1kqJRuVpwT3-_bZCX3WglumLIJXxdbdQz')
