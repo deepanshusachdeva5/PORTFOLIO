@@ -1,6 +1,5 @@
 {
   "name": "portfolio-page",
-  "homepage": "http://deepanshusachdeva5.github.io/Portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -15,7 +14,7 @@
     "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject",
-    "predeploy": "npm start build",
+    "predeploy": "npm run build",
     "deploy" : "gh-pages -d build"
   },
   "engines": {
