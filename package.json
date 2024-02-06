@@ -15,7 +15,7 @@
     "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm start build",
     "deploy" : "gh-pages -d build"
   },
   "engines": {
