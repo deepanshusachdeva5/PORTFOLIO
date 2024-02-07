@@ -25,7 +25,7 @@ const Publications = () => {
             <div className="home-links-container">
                 <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
                 <span className="home-link1 Navbar-Link">Experience</span>
-                <span className="home-link2 Navbar-Link">Publications</span>
+                <span className="home-link2 Navbar-Link">Blogs</span>
                 <span className="Navbar-Link">Contact</span>
             </div>
             <div data-role="BurgerMenu" className="home-burger-menu">
@@ -56,21 +56,21 @@ const Publications = () => {
 
                 <div className="home-features">
                     <div className="home-heading-container">
-                    <h2 className="home-text03 Section-Heading">Publications</h2>
+                    <h2 className="home-text03 Section-Heading">Blogs</h2>
 
                     </div>
                     <div className="home-cards-container">
                         <div className="publications-card">
                             <div className="home-icon-container">
-                                <img alt="image" src="/publications1.webp" className="home-logo" />
+                                <a href="https://medium.com/analytics-vidhya/implementing-transformers-from-scratch-positional-encoding-614d731cf5b5"><img alt="image" src="/publications1.webp" className="home-logo publication_image" /></a>
                             </div>
                             <div className="home-content-container">
-                            <span className="home-heading3 Card-Heading">Implementing Transformers from Scratch — Positional Encoding</span>
+                                <u><a href="https://medium.com/analytics-vidhya/implementing-transformers-from-scratch-positional-encoding-614d731cf5b5"><span className="home-heading3 Card-Heading">Implementing Transformers from Scratch — Positional Encoding</span></a></u>
                             </div>
                         </div>
                         <div className="publications-card">
                             <div className="home-icon-container1">
-                                <img alt="image" src="/publications2.webp" className="home-logo" />
+                                <img alt="image" src="/publications2.webp" className="home-logo publication_image" />
                             </div>
                             <div className="home-content-container1">
                             <span className="home-heading4 Card-Heading">Real Time Distance Calculation Using ARUCO Markers</span>
@@ -78,7 +78,7 @@ const Publications = () => {
                         </div>
                         <div className="publications-card">
                             <div className="home-icon-container2">
-                                <img alt="image" src="/publications3.webp" className="home-logo" />
+                                <img alt="image" src="/publications3.webp" className="home-logo publication_image" />
                             </div>
                             <div className="home-content-container2">
                             <span className="home-heading5 Card-Heading">Implementing Glove from scratch — Word Embedding for Transformers </span>

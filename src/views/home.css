@@ -1433,7 +1433,8 @@
 }
 
 .logoBar{
-    width: 2em;
+    width:2em;
+    border-radius: 6%;
 }
 
 .resume_class{

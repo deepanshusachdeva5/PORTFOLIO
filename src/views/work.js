@@ -25,7 +25,7 @@ const Work =(props)=>{
           <div className="home-links-container">
             <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
             <span className="home-link1 Navbar-Link">Experience</span>
-            <span className="home-link2 Navbar-Link">Publications</span>
+            <span className="home-link2 Navbar-Link">Blogs</span>
             <span className="Navbar-Link">Contact</span>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
@@ -61,7 +61,7 @@ const Work =(props)=>{
                 <div className="home-cards-container">
                     <div className="home-card">
                         <div className="home-icon-container">
-                            <img alt="image" src="/advancedQABot.png" className="home-logo" />
+                            <img alt="image" src="/advancedQABot.png" className="home-logo projectImage" />
                         </div>
                         <div className="home-content-container">
                         <span className="home-heading3 Card-Heading">Advanced Question Answering Bot</span>
@@ -72,7 +72,7 @@ const Work =(props)=>{
                     </div>
                     <div className="home-card1">
                         <div className="home-icon-container1">
-                            <img alt="image" src="/aiInterviewer.jpg" className="home-logo" />
+                            <img alt="image" src="/aiInterviewer.jpg" className="home-logo projectImage" />
                         </div>
                         <div className="home-content-container1">
                         <span className="home-heading4 Card-Heading">AI - Interviewer</span>
@@ -83,7 +83,7 @@ const Work =(props)=>{
                     </div>
                     <div className="home-card2">
                         <div className="home-icon-container2">
-                            <img alt="image" src="/AI_vs_Human.jpg" className="home-logo" />
+                            <img alt="image" src="/AI_vs_Human.jpg" className="home-logo projectImage" />
                         </div>
                         <div className="home-content-container2">
                         <span className="home-heading5 Card-Heading">AI vs Human Text </span>
@@ -94,7 +94,7 @@ const Work =(props)=>{
                     </div>
                     <div className="home-card">
                         <div className="home-icon-container">
-                            <img alt="image" src="/nutrition.jpg" className="home-logo" />
+                            <img alt="image" src="/nutrition.jpg" className="home-logo projectImage" />
                         </div>
                         <div className="home-content-container">
                         <span className="home-heading3 Card-Heading">Nutritional Intake Estimator Using Food Images </span>
@@ -105,7 +105,7 @@ const Work =(props)=>{
                     </div>
                     <div className="home-card">
                         <div className="home-icon-container">
-                            <img alt="image" src="/videoActivity.jpg" className="home-logo" />
+                            <img alt="image" src="/videoActivity.jpg" className="home-logo projectImage" />
                         </div>
                         <div className="home-content-container">
                         <span className="home-heading4 Card-Heading">Video Activity Recognizer</span>
@@ -116,7 +116,7 @@ const Work =(props)=>{
                     </div>
                     <div className="home-card">
                         <div className="home-icon-container">
-                            <img alt="image" src="/realTimeDistance.jpg" className="home-logo" />
+                            <img alt="image" src="/realTimeDistance.jpg" className="home-logo projectImage" />
                         </div>
                         <div className="home-content-container">
                         <span className="home-heading4 Card-Heading">Real Time Distance Calculation using Aruco Markers</span>

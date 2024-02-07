@@ -14,7 +14,8 @@
     "start": "serve -s build",
     "build": "craco build",
     "test": "craco test --env=jsdom",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "local": "craco start"
   },
   "engines": {
     "node": "18.x"

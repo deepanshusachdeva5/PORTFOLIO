@@ -45,7 +45,7 @@ const Home = (props) => {
           <div className="home-links-container">
             <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
             <span className="home-link1 Navbar-Link">Experience</span>
-            <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Publications</span></button>
+            <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
             <span className="Navbar-Link">Contact</span>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
@@ -65,7 +65,7 @@ const Home = (props) => {
             <div className="home-links-container1">
               <span className="home-link4 Navbar-Link">My Work</span>
               <span className="home-link5 Navbar-Link">Experience</span>
-              <span className="home-link6 Navbar-Link">Publications</span>
+              <span className="home-link6 Navbar-Link">Blogs</span>
               <span className="Navbar-Link">Contact</span>
             </div>
           </div>

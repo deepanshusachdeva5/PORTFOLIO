@@ -4,3 +4,6 @@
 .work-home-button{
     cursor: pointer;
 }
+.projectImage{
+    border-radius: 100%;
+}
