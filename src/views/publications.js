@@ -14,6 +14,12 @@ const Publications = () => {
                 navigate('/')
 
         }
+
+        const handleOnMyPublications = () =>{
+
+
+            navigate('/publications')
+        }
         const handleOnMyWork = () =>{
 
             navigate('/work');
@@ -24,6 +30,10 @@ const Publications = () => {
             navigate('/showBlog', {state: {url: url}})    
         }
 
+        const handleOnMyExperience = ()=>{
+
+            navigate('/experience')
+        }
         return (
             <div className="home-container">
                 <div data-role="Header" className="home-navbar-container">
@@ -31,8 +41,8 @@ const Publications = () => {
             <button className = 'work-home-button' onClick={handleHomeClick}><span className="Card-Heading home-heading"><img alt="image" src= "./image2.jpg" className='logoBar'/></span></button>
             <div className="home-links-container">
                 <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
-                <span className="home-link1 Navbar-Link">Experience</span>
-                <span className="home-link2 Navbar-Link">Blogs</span>
+                <button className = 'work-home-button' onClick={handleOnMyExperience}><span className="home-link1 Navbar-Link">Experience</span></button>
+                <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
                 <span className="Navbar-Link">Contact</span>
             </div>
             <div data-role="BurgerMenu" className="home-burger-menu">

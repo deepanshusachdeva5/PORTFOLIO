@@ -22,6 +22,11 @@ const Work =(props)=>{
 
             navigate('/publications')
         }
+
+        const handleOnMyExperience = ()=>{
+
+                 navigate('/experience')
+        }
         return (
         <div className="home-container">
 
@@ -30,7 +35,7 @@ const Work =(props)=>{
           <button className = 'work-home-button' onClick={handleHomeClick}><span className="Card-Heading home-heading"><img alt="image" src= "./image2.jpg" className='logoBar'/></span></button>
           <div className="home-links-container">
             <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
-            <span className="home-link1 Navbar-Link">Experience</span>
+            <button className = 'work-home-button' onClick={handleOnMyExperience}><span className="home-link1 Navbar-Link">Experience</span></button>
             <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
             <span className="Navbar-Link">Contact</span>
           </div>
