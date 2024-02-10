@@ -72,8 +72,37 @@ const Contact = () => {
       </div>
       <div className="home-section-separator"></div>
       <div className="home-section-separator1"></div>
+
+            <div className="home-features">
+                <div className="home-cards-container">
+                    <div className="home-card">
+                        <div className="home-icon-container">
+                            <img alt="image" src="/linkedIn.png" className="home-logo projectImage" />
+                        </div>
+                        <div className="home-content-container">
+                        <span className="home-heading3 Card-Heading">Deepanshu Sachdeva</span>
+                        <span className="home-text05 Card-Text">
+                            Researcher @University of Colorado at Boulder | Ex- Samsung
+                        </span>
+                        </div>
+                    </div>
+                    <div className="home-card">
+                        <div className="home-icon-container">
+                            <img alt="image" src="/github.png" className="home-logo projectImage" />
+                        </div>
+                        <div className="home-content-container">
+                        <span className="home-heading3 Card-Heading">Deepanshu Sachdeva</span>
+                        <span className="home-text05 Card-Text">
+                            Skills: Pytorch, Natural Language Processing, Computer Vision, BioInformatics, AWS, Docker, React, Node
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
      </div>
     )
+
+    
 
 }
 
