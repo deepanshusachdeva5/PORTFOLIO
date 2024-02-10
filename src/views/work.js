@@ -16,6 +16,12 @@ const Work =(props)=>{
 
             navigate('/work');
         }
+
+        const handleOnMyPublications = () =>{
+
+
+            navigate('/publications')
+        }
         return (
         <div className="home-container">
 
@@ -25,7 +31,7 @@ const Work =(props)=>{
           <div className="home-links-container">
             <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
             <span className="home-link1 Navbar-Link">Experience</span>
-            <span className="home-link2 Navbar-Link">Blogs</span>
+            <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
             <span className="Navbar-Link">Contact</span>
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
@@ -70,22 +76,22 @@ const Work =(props)=>{
                         </span>
                         </div>
                     </div>
-                    <div className="home-card1">
-                        <div className="home-icon-container1">
+                    <div className="home-card">
+                        <div className="home-icon-container">
                             <img alt="image" src="/aiInterviewer.jpg" className="home-logo projectImage" />
                         </div>
-                        <div className="home-content-container1">
-                        <span className="home-heading4 Card-Heading">AI - Interviewer</span>
-                        <span className="home-text06 Card-Text">
+                        <div className="home-content-container">
+                        <span className="home-heading3 Card-Heading">AI - Interviewer</span>
+                        <span className="home-text05 Card-Text">
                             Techstack: OpenAI's Whisper, OpenAI's GPT3, React.js, Node.js, MongoDB, Python
                         </span>
                         </div>
                     </div>
-                    <div className="home-card2">
-                        <div className="home-icon-container2">
+                    <div className="home-card">
+                        <div className="home-icon-container">
                             <img alt="image" src="/AI_vs_Human.jpg" className="home-logo projectImage" />
                         </div>
-                        <div className="home-content-container2">
+                        <div className="home-content-container">
                         <span className="home-heading5 Card-Heading">AI vs Human Text </span>
                         <span className="home-text07 Card-Text">
                             Techstack: Transformers, TF-IDF, React.js, Node.js, MongoDB 

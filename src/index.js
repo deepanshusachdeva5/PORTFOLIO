@@ -11,6 +11,7 @@ import './style.css'
 import Home from './views/home'
 import NotFound from './views/not-found'
 import Work from './views/work'
+import Blog from './views/blog'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route element={<Home></Home>} exact path="/" />
         <Route element={<Work></Work>}  path="/work" />
+        <Route element={<Blog></Blog>}  path="/showBlog" />
         <Route element={<Publications></Publications>}  path="/publications" />
         <Route element={<NotFound></NotFound>} path="**" />
       </Routes>

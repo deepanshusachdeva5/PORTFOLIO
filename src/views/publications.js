@@ -3,6 +3,8 @@ import './home.css'
 import {useNavigate} from 'react-router-dom'
 import './publications.css'
 
+import Blog from './blog'
+
 
 const Publications = () => {
 
@@ -15,6 +17,11 @@ const Publications = () => {
         const handleOnMyWork = () =>{
 
             navigate('/work');
+        }
+
+        const handleBlogClick = (url) => {
+
+            navigate('/showBlog', {state: {url: url}})    
         }
 
         return (
@@ -60,30 +67,40 @@ const Publications = () => {
 
                     </div>
                     <div className="home-cards-container">
-                        <div className="publications-card">
-                            <div className="home-icon-container">
-                                <a href="https://medium.com/analytics-vidhya/implementing-transformers-from-scratch-positional-encoding-614d731cf5b5"><img alt="image" src="/publications1.webp" className="home-logo publication_image" /></a>
+                        <a className='publications-card' target='blank_' href='https://medium.com/analytics-vidhya/implementing-transformers-from-scratch-positional-encoding-614d731cf5b5'>
+                            <div >
+                                <div className="home-icon-container">
+                                    <img alt="image" src="/publications1.webp" className="home-logo publication_image" />
+                                </div>
+                                <div className="home-content-container">
+                                    <u><span className="home-heading3 Card-Heading">Implementing Transformers from Scratch — Positional Encoding</span></u>
+                                </div>
                             </div>
-                            <div className="home-content-container">
-                                <u><a href="https://medium.com/analytics-vidhya/implementing-transformers-from-scratch-positional-encoding-614d731cf5b5"><span className="home-heading3 Card-Heading">Implementing Transformers from Scratch — Positional Encoding</span></a></u>
+                        </a>
+
+                        <a className="publications-card" target='blank_' href='https://medium.com/analytics-vidhya/real-time-distance-calculation-using-aruco-markers-b469d5f9791d'>
+                            <div >
+                                <div className="home-icon-container1">
+                                    <img alt="image" src="/realTimeDistance.jpg" className="home-logo publication_image" />
+                                </div>
+                                <div className="home-content-container1">
+                                <u><span className="home-heading4 Card-Heading">Real Time Distance Calculation Using ARUCO Markers</span></u>
+                                </div>
                             </div>
-                        </div>
-                        <div className="publications-card">
-                            <div className="home-icon-container1">
-                                <img alt="image" src="/publications2.webp" className="home-logo publication_image" />
+                        </a>
+
+
+                        <a className="publications-card" target='blank_' href='https://medium.com/nerd-for-tech/implementing-glove-from-scratch-word-embedding-for-transformers-95503138d65'>
+                            <div >
+                                <div className="home-icon-container2">
+                                    <img alt="image" src="/publications3.webp" className="home-logo publication_image" />
+                                </div>
+                                <div className="home-content-container2">
+                                <u><span className="home-heading5 Card-Heading">Implementing Glove from scratch — Word Embedding for Transformers </span></u>
+                                </div>
                             </div>
-                            <div className="home-content-container1">
-                            <span className="home-heading4 Card-Heading">Real Time Distance Calculation Using ARUCO Markers</span>
-                            </div>
-                        </div>
-                        <div className="publications-card">
-                            <div className="home-icon-container2">
-                                <img alt="image" src="/publications3.webp" className="home-logo publication_image" />
-                            </div>
-                            <div className="home-content-container2">
-                            <span className="home-heading5 Card-Heading">Implementing Glove from scratch — Word Embedding for Transformers </span>
-                            </div>
-                        </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
