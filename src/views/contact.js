@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import './home.css'
 import { useNavigate } from 'react-router-dom'
 
-const Experience = () => {
+const Contact = () => {
 
     const navigate = useNavigate();
 
@@ -27,7 +27,6 @@ const Experience = () => {
 
       navigate('/work');
   }
-
   const handleOnContact = () => {
 
       navigate('/contact')
@@ -78,4 +77,4 @@ const Experience = () => {
 
 }
 
-export default Experience;
+export default Contact;

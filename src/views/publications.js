@@ -30,6 +30,10 @@ const Publications = () => {
             navigate('/showBlog', {state: {url: url}})    
         }
 
+          const handleOnContact = () => {
+
+            navigate('/contact')
+         }
         const handleOnMyExperience = ()=>{
 
             navigate('/experience')
@@ -43,7 +47,7 @@ const Publications = () => {
                 <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
                 <button className = 'work-home-button' onClick={handleOnMyExperience}><span className="home-link1 Navbar-Link">Experience</span></button>
                 <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
-                <span className="Navbar-Link">Contact</span>
+                <button className = 'work-home-button' onClick={handleOnContact}><span className="Navbar-Link">Contact</span></button>
             </div>
             <div data-role="BurgerMenu" className="home-burger-menu">
                 <svg viewBox="0 0 1024 1024" className="home-icon">
