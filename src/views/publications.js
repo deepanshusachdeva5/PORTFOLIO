@@ -38,13 +38,20 @@ const Publications = () => {
 
             navigate('/experience')
         }
+
+  const handleResumeClick = () =>{
+
+    navigate('/resume')
+
+  } 
         return (
             <div className="home-container">
                 <div data-role="Header" className="home-navbar-container">
             <div className="home-navbar">
             <button className = 'work-home-button' onClick={handleHomeClick}><span className="Card-Heading home-heading"><img alt="image" src= "./image2.jpg" className='logoBar'/></span></button>
             <div className="home-links-container">
-                <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
+                <button className = 'work-home-button' onClick={handleResumeClick}><span className="home-link Navbar-Link">Resume</span></button>
+                <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">Projects</span></button>
                 <button className = 'work-home-button' onClick={handleOnMyExperience}><span className="home-link1 Navbar-Link">Experience</span></button>
                 <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
                 <button className = 'work-home-button' onClick={handleOnContact}><span className="Navbar-Link">Contact</span></button>

@@ -31,6 +31,12 @@ const Contact = () => {
 
       navigate('/contact')
     }
+
+      const handleResumeClick = () =>{
+
+    navigate('/resume')
+
+  } 
     return (
 
     <div className="home-container">
@@ -42,7 +48,9 @@ const Contact = () => {
         <div className="home-navbar">
           <button className = 'work-home-button' onClick={handleHomeClick}><span className="Card-Heading home-heading"><img alt="image" src= "./image2.jpg" className='logoBar'/></span></button>
           <div className="home-links-container">
-            <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
+
+            <button className = 'work-home-button' onClick={handleResumeClick}><span className="home-link Navbar-Link">Resume</span></button>
+            <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">Projects</span></button>
             <button className = 'work-home-button' onClick={handleOnMyExperience}><span className="home-link1 Navbar-Link">Experience</span></button>
             <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
             <button className = 'work-home-button' onClick={handleOnContact}><span className="Navbar-Link">Contact</span></button>
@@ -75,28 +83,34 @@ const Contact = () => {
 
             <div className="home-features">
                 <div className="home-cards-container">
-                    <div className="home-card">
-                        <div className="home-icon-container">
-                            <img alt="image" src="/linkedIn.png" className="home-logo projectImage" />
+                    <a className="home-card" target="blank_" href="https://www.linkedin.com/in/deepanshusachdeva5/">
+                        <div >
+                            <div className="home-icon-container">
+                                <img alt="image" src="/linkedIn.png" className="home-logo projectImage" />
+                            </div>
+                            <div className="home-content-container">
+                            <span className="home-heading3 Card-Heading">Deepanshu Sachdeva</span>
+                            <span className="home-text05 Card-Text">
+                                Computer Vision Researcher @University of Colorado at Boulder | Ex- Samsung | Ex-Coding Ninjas | Ex-Rubick.ai
+                            </span>
+                            </div>
                         </div>
-                        <div className="home-content-container">
-                        <span className="home-heading3 Card-Heading">Deepanshu Sachdeva</span>
-                        <span className="home-text05 Card-Text">
-                            Researcher @University of Colorado at Boulder | Ex- Samsung
-                        </span>
+                    </a>
+
+                    <a className="home-card" target="blank_" href="https://github.com/deepanshusachdeva5">
+                        <div >
+                            <div className="home-icon-container">
+                                <img alt="image" src="/github.png" className="home-logo projectImage" />
+                            </div>
+                            <div className="home-content-container">
+                            <span className="home-heading3 Card-Heading">Deepanshu Sachdeva</span>
+                            <span className="home-text05 Card-Text">
+                                Skills: Pytorch, Natural Language Processing, Computer Vision, BioInformatics, AWS, Docker, React, Node
+                            </span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="home-card">
-                        <div className="home-icon-container">
-                            <img alt="image" src="/github.png" className="home-logo projectImage" />
-                        </div>
-                        <div className="home-content-container">
-                        <span className="home-heading3 Card-Heading">Deepanshu Sachdeva</span>
-                        <span className="home-text05 Card-Text">
-                            Skills: Pytorch, Natural Language Processing, Computer Vision, BioInformatics, AWS, Docker, React, Node
-                        </span>
-                        </div>
-                    </div>
+                    </a>
+
                 </div>
             </div>
      </div>

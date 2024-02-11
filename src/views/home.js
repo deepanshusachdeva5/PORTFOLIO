@@ -37,11 +37,11 @@ const Home = (props) => {
   }
 
 
-  // const handleClickResume = () =>{
+  const handleResumeClick = () =>{
 
-  //   navigate('https://drive.google.com/drive/u/0/folders/1kqJRuVpwT3-_bZCX3WglumLIJXxdbdQz')
+    navigate('/resume')
 
-  // } 
+  } 
   return (
     <div className="home-container">
       <Helmet>
@@ -52,10 +52,12 @@ const Home = (props) => {
         <div className="home-navbar">
           <button className = 'work-home-button' onClick={handleHomeClick}><span className="Card-Heading home-heading"><img alt="image" src= "./image2.jpg" className='logoBar'/></span></button>
           <div className="home-links-container">
-            <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">My Work</span></button>
+            <button className = 'work-home-button' onClick={handleResumeClick}><span className="home-link Navbar-Link">Resume</span></button>
+            <button className = 'work-home-button' onClick={handleOnMyWork}><span className="home-link Navbar-Link">Projects</span></button>
             <button className = 'work-home-button' onClick={handleOnMyExperience}><span className="home-link1 Navbar-Link">Experience</span></button>
             <button className = 'work-home-button' onClick={handleOnMyPublications}><span className="home-link2 Navbar-Link">Blogs</span></button>
             <button className = 'work-home-button' onClick={handleOnContact}><span className="Navbar-Link">Contact</span></button>
+            
           </div>
           <div data-role="BurgerMenu" className="home-burger-menu">
             <svg viewBox="0 0 1024 1024" className="home-icon">
@@ -99,7 +101,8 @@ const Home = (props) => {
               <button className="home-cta-btn Anchor button" onClick={handleOnMyWork} >
                 <span className="home-text02">My Work</span>
               </button>
-              <button className="home-cta-btn1 button Anchor resume_class" ><a target="_blank" href='https://drive.google.com/file/d/1WoNILAt45XGMT9BxmvJ0Oe1O05XyJzK6/view?usp=drive_link'>Resume</a></button>
+              
+              <button className="home-cta-btn1 button Anchor resume_class" onClick={handleResumeClick} >Resume</button>
             </div>
           </div>
           <img

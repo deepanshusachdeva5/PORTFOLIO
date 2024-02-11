@@ -2,8 +2,9 @@ import React from "react";
 import { Helmet } from 'react-helmet'
 import './home.css'
 import { useNavigate } from 'react-router-dom'
+import './resume.css'
 
-const Experience = () => {
+const Resume = () => {
 
     const navigate = useNavigate();
 
@@ -27,13 +28,12 @@ const Experience = () => {
 
       navigate('/work');
   }
-
   const handleOnContact = () => {
 
       navigate('/contact')
     }
 
-      const handleResumeClick = () =>{
+  const handleResumeClick = () =>{
 
     navigate('/resume')
 
@@ -80,9 +80,18 @@ const Experience = () => {
       </div>
       <div className="home-section-separator"></div>
       <div className="home-section-separator1"></div>
+
+            <div className="home-features">
+                <div className="resume-container">
+                    <iframe className="resume-class" src="./DeepanshuSachdeva_Resume.pdf" ></iframe>
+
+                </div>
+            </div>
      </div>
     )
 
+    
+
 }
 
-export default Experience;
+export default Resume;

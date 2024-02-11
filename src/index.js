@@ -14,6 +14,9 @@ import Work from './views/work'
 import Blog from './views/blog'
 import Experience from './views/experience'
 import Contact from './views/contact'
+import Resume from './views/resume'
+
+
 const App = () => {
   return (
     <Router>
@@ -23,6 +26,7 @@ const App = () => {
         <Route element={<Blog></Blog>}  path="/showBlog" />
         <Route element={<Experience></Experience>}  path="/experience" />
         <Route element={<Contact></Contact>}  path="/contact" />
+        <Route element={<Resume></Resume>}  path="/resume" />
         <Route element={<Publications></Publications>}  path="/publications" />
         <Route element={<NotFound></NotFound>} path="**" />
       </Routes>
